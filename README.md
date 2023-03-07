@@ -17,7 +17,7 @@ The webpage will open automatically just wait
 
 -------------------------------------------------------------------------------------------------
 //TO DO
-More function to do
+More function to do :
   -Add file type search
   -Add make the programs with function
   -Add tkinter or sometihng else to make it in a windows and more users friendly
