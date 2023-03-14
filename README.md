@@ -20,6 +20,6 @@ The webpage will open automatically just wait
 More function to do :
   - Add file type search
   - make the programs with function ✅
-  - Add tkinter or sometihng else to make it in a windows and more users friendly ✅
+  - Add tkinter or something else to make it in a windows and more users friendly ✅
   - Compile to .exe
   
