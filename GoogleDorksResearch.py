@@ -4,15 +4,21 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 window=Tk()
 
-def dorks(name, site):
+def dorks(name, site, filetype):
     dorks = ["intitle","intext","inurl"]#dorks list
     name_accurate = '"'+name+'"' #Remake name in correct format
     if site == "" : #if no website to search
         for i in range(len(dorks)) :
-            webbrowser.open("https://www.google.fr/search?q="+dorks[i]+":"+name_accurate) #search name with dorks
+            if filetype == "" :
+                webbrowser.open("https://www.google.fr/search?q="+dorks[i]+":"+name_accurate) #search name with dorks
+            else :
+                webbrowser.open("https://www.google.fr/search?q="+dorks[i]+":"+name_accurate+" filetype:"+filetype) #search name with dorks
     else : #if there is a specific website
         for i in range(len(dorks)) :
-            webbrowser.open("https://www.google.fr/search?q="+dorks[i]+":"+name_accurate+" site:"+site) #search name with dorks and on specific website
+            if filetype == "" :
+                webbrowser.open("https://www.google.fr/search?q="+dorks[i]+":"+name_accurate+" site:"+site) #search name with dorks and on specific website
+            else :
+                webbrowser.open("https://www.google.fr/search?q="+dorks[i]+":"+name_accurate+" site:"+site+" filetype:"+filetype) #search name with dorks and on specific website
         webbrowser.open("https://www.google.fr/search?q="+name_accurate+" site:"+site) #search name without dorks, on specific website
 
 #----------------------------------------------------------
@@ -46,8 +52,12 @@ lbl=Label(window, text="Website :")
 lbl.place(relx=.2, rely=.4,anchor= CENTER)
 txtfldsite=Entry(window, bd=5)
 txtfldsite.place(relx=.5, rely=.4,anchor= CENTER)
-btn=Button(window, text="research", command=lambda : dorks(txtfldname.get(), txtfldsite.get()))
-btn.place(relx=.5, rely=.5,anchor= CENTER)
+lbl=Label(window, text="Filetype :")
+lbl.place(relx=.2, rely=.5,anchor= CENTER)
+txtfldfile=Entry(window, bd=5)
+txtfldfile.place(relx=.5, rely=.5,anchor= CENTER)
+btn=Button(window, text="research", command=lambda : dorks(txtfldname.get(), txtfldsite.get(), txtfldfile.get()))
+btn.place(relx=.5, rely=.6,anchor= CENTER)
 
 
 window.tk.call('wm', 'iconphoto', window._w, ImageTk.PhotoImage(file='logo.png'))
