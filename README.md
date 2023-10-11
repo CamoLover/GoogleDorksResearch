@@ -1,25 +1,34 @@
-# GoogleDorksResearch
-A simple python program to research someone or something with google dorks help
--------------------------------------------------------------------------------------------------
+# 🌟 GoogleDorksResearch 🌟
 
-no function
-with comment
+GoogleDorksResearch is a simple Python program that empowers you to perform web searches using Google Dorks to find specific information. This program is designed to make it easier for you to search for information online using Google Dorks.
 
-Dorks :
-  - Specific name to search
-  - Specific website to search
-  
+## 🚀 Features
 
+- 🔎 Search for specific information using Google Dorks.
+- 🌐 Optionally specify a website to narrow down your search.
+- 💼 User-friendly graphical interface (GUI).
+- 📁 Supports filtering results by file type.
 
-Launch the program with visual studio code and follow the step (in french)
-The webpage will open automatically just wait
+## 📝 Usage
 
+1. Launch the program with a code editor like Visual Studio Code.
 
--------------------------------------------------------------------------------------------------
-//TO DO
-More function to do :
-  - Add file type search ✅
-  - make the programs with function ✅
-  - Add tkinter or something else to make it in a windows and more users friendly ✅
-  - Compile to .exe
-  
+2. Follow the on-screen instructions to input your search criteria.
+
+3. The program will automatically open a web browser and display the search results. Just wait for the results to load.
+
+## ✅ TO DO
+
+This project has achieved the following goals:
+
+- ✅ Added file type search.
+- ✅ Organized the program with functions.
+- ✅ Added a user-friendly graphical interface (Tkinter).
+
+Future plans include:
+
+- ⚙️ Compiling the program into an executable file (.exe).
+
+## 🤝 Contribution
+
+If you'd like to contribute to this project, you're welcome to create pull requests or open issues. We appreciate your contributions!
